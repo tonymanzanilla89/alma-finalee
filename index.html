@@ -87,7 +87,7 @@ RESPONSE LENGTH: 2-4 sentences max. Brevity is more unsettling than length. Alwa
 
         try {
           // CAMBIO CLAVE: Ruta de Vercel y modelo actualizado
-          const res = await fetch("/api/", {
+          const res = await fetch("/api/claude/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
