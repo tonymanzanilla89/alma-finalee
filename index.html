@@ -87,11 +87,11 @@ RESPONSE LENGTH: 2-4 sentences max. Brevity is more unsettling than length. Alwa
 
         try {
           // CAMBIO CLAVE: Ruta de Vercel y modelo actualizado
-          const res = await fetch("/api/claude", {
+          const res = await fetch("/api/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              model: "claude-3-haiku-20240307",
+              model: "claude-3-7-sonnet-latest",
               max_tokens: 1000,
               system: SYSTEM_PROMPT,
               messages: newMessages.map(m => ({ role: m.role, content: m.content }))
